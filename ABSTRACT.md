@@ -1,6 +1,6 @@
-**The Multi-National Road Damage Dataset 2022** comprises 47,420 road images from six countries, Japan, India, the Czech Republic, Norway, the United States, and China. The images have been annotated with more than 55,000 instances of road damage. Five types of road damage, namely *longitudinal crack*, *transverse crack*, *alligator crack*, *pothole* and *other corruption* are captured in the dataset. The annotated dataset is envisioned for developing deep learning-based methods to detect and classify road damage automatically.
+**The Multi-National Road Damage Dataset 2022 (RDD2022)** comprises 47,420 road images from six countries, Japan, India, the Czech Republic, Norway, the United States, and China. The images have been annotated with more than 55,000 instances of road damage. Five types of road damage, namely *longitudinal crack*, *transverse crack*, *alligator crack*, *pothole* and *other corruption* are captured in the dataset. The annotated dataset is envisioned for developing deep learning-based methods to detect and classify road damage automatically.
 
-<img src="https://github.com/dataset-ninja/road-damage-detector/assets/120389559/9541583b-9965-4e25-b2ae-715b3331dc96" alt="image" width="800">
+<img src="https://github.com/dataset-ninja/road-damage-detector/assets/120389559/9541583b-9965-4e25-b2ae-715b3331dc96" alt="image" width="1000">
 
 <span style="font-size: smaller; font-style: italic;">Sample images for road damage categories considered in the data. a. Longitudinal Crack (D00), b. Transverse Crack (D10), c. Alligator Crack (D20), d. Pothole (D40).</span>
 
@@ -12,12 +12,11 @@
 
 * **Czech Republic:** A substantial portion of road images was collected in Olomouc, Prague, and Bratislava municipalities and covered a mix of first-class, second-class, and third-class roads and local roads. A smaller portion of the road image dataset was collected along D1, D2, and D46 motorways to enhance the resilience of the targeted model. 
 
-* **Norway:** The data from Norway consists of two classes of roads a) Expressways and b) County Roads (or Low Volume Roads). Both types of road classes are asphalt pavements. Data collection is done by the Norwegian Public Road Administration (Statens Vegvesen, SVV) and Inlandet Fylkeskommune (IFK). Images provided by SVV were collected on European Route E14, connecting the city of Trondheim in Norway to Sundsvall in Sweden. At the same time, the images from IFK belong to different county roads within Inllanndet County in Norway. The images were collected without any control over daytime/light, and all the images are natural without further processing. Further, the dataset captures diverse backgrounds, including clear grass fields, snow-covered areas, and conditions after rain. Furthermore, images with different illuminances, such as high sunlight and overcast weather resulting in daylight, are considered. 
+* **Norway:** The data from Norway consists of two classes of roads Expressways and County Roads (or Low Volume Roads). Both types of road classes are asphalt pavements. Data collection is done by the Norwegian Public Road Administration (Statens Vegvesen, SVV) and Inlandet Fylkeskommune (IFK). Images provided by SVV were collected on European Route E14, connecting the city of Trondheim in Norway to Sundsvall in Sweden. At the same time, the images from IFK belong to different county roads within Inllanndet County in Norway. The images were collected without any control over daytime/light, and all the images are natural without further processing. Further, the dataset captures diverse backgrounds, including clear grass fields, snow-covered areas, and conditions after rain. Furthermore, images with different illuminances, such as high sunlight and overcast weather resulting in daylight, are considered. 
 
 * **United States:** The data from the United States consists of Google Street View images covering multiple locations, including California, Massachusetts, and New York.
 
-* **China:** RDD2022 considers two types of data from China: (a) images captured by Drones (represented as China_Drone or China_D), and (b) the images captured using Smartphone-mounted MotorBikes (represented as China_MotorBike or China_M). The drone images were obtained from Dongji Avenue in Nanjing, China. The
-MotorBike images were collected on Jiu long hu campus, Southeast University. Images with normal light, under a shadow environment, and wet stains are covered.
+* **China:** RDD2022 considers two types of data from China: (a) images captured by Drones (represented as China_Drone or China_D), and (b) the images captured using Smartphone-mounted MotorBikes (represented as China_MotorBike or China_M). The drone images were obtained from Dongji Avenue in Nanjing, China. The MotorBike images were collected on Jiu long hu campus, Southeast University. Images with normal light, under a shadow environment, and wet stains are covered.
 
 Asphalt concrete pavement is considered with a few exceptions in all six subsets of RDD2022.
 
@@ -53,11 +52,10 @@ In contrast, the data for the United States comprises Google Street View Images 
 
 ## Dataset Annotation
 
-RDD2022 includes annotation for road damage present in the image. The software [LabelImg](https://github.com/heartexlabs/labelImg) has been used to annotate the images except for the data from Norway. For Norway, another software [Computer Vision Annotation Tool (CVAT)](https://github.com/opencv/cvat), was utilized.
-All recognized damage instances were annotated by enclosing them with bounding boxes and classified by attaching the proper class label. Class labels and bounding box coordinates, defined by four decimal numbers (xmin, ymin, xmax, ymax), were stored in the XML format.
+RDD2022 includes annotation for road damage present in the image. The software [LabelImg](https://github.com/heartexlabs/labelImg) has been used to annotate the images except for the data from Norway. For Norway, another software [Computer Vision Annotation Tool (CVAT)](https://github.com/opencv/cvat), was utilized. All recognized damage instances were annotated by enclosing them with bounding boxes and classified by attaching the proper class label. Class labels and bounding box coordinates, defined by four decimal numbers (xmin, ymin, xmax, ymax), were stored in the XML format.
 
 <img src="https://github.com/dataset-ninja/road-damage-detector/assets/120389559/ba173aaf-2569-45b5-92e5-f1cb482fe75a" alt="image" width="800">
 
-<span style="font-size: smaller; font-style: italic;">Annotation Pipeline (a) input image, (b) image with bounding boxes, (c) final annotated image containing bounding boxes and class label (D00 in this case)</span>
+<span style="font-size: smaller; font-style: italic;">Annotation Pipeline (a) input image, (b) image with bounding boxes, (/c) final annotated image containing bounding boxes and class label (D00 in this case)</span>
 
 
