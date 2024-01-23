@@ -83,7 +83,10 @@ ORGANIZATION_NAME: Optional[Union[str, List[str]]] = ["JP-ID joint research grou
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
-SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = None
+SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
+    "countries": ["China" "Czech", "India", "Japan", "Norway", "United States"],
+    "__POSTTEXT__": "Additionally, every image from ***China*** marked with the ***drone*** or ***motorbike*** tag. Images labels have ***detail*** tag. Explore it in supervisely labeling tool",
+}
 TAGS: Optional[List[str]] = None
 
 

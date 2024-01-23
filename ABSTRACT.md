@@ -16,9 +16,9 @@
 
 * **United States:** The data from the United States consists of Google Street View images covering multiple locations, including California, Massachusetts, and New York.
 
-* **China:** RDD2022 considers two types of data from China: (a) images captured by Drones (represented as China_Drone or China_D), and (b) the images captured using Smartphone-mounted MotorBikes (represented as China_MotorBike or China_M). The drone images were obtained from Dongji Avenue in Nanjing, China. The MotorBike images were collected on Jiu long hu campus, Southeast University. Images with normal light, under a shadow environment, and wet stains are covered.
+* **China:** RDD2022 considers two types of data from China: (a) images captured by ***drone***, and (b) the images captured using Smartphone-mounted ***motorbike***. The ***drone*** images were obtained from Dongji Avenue in Nanjing, China. The ***motorbike*** images were collected on Jiu long hu campus, Southeast University. Images with normal light, under a shadow environment, and wet stains are covered.
 
-Asphalt concrete pavement is considered with a few exceptions in all six subsets of RDD2022.
+Asphalt concrete pavement is considered with a few exceptions in all six subsets of RDD2022. Each road damage in dataset has ***detail*** definitions.
 
 <img src="https://github.com/dataset-ninja/road-damage-detector/assets/120389559/1511af40-a0f2-413f-93b7-c5dffe602eda" alt="image" width="800">
 
