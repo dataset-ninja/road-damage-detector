@@ -14,7 +14,7 @@ from dataset_tools.templates import (
 # * Before uploading to instance #
 ##################################
 PROJECT_NAME: str = "Road Damage Detection 2022"
-PROJECT_NAME_FULL: str = "The multi-national Road Damage Dataset 2022"
+PROJECT_NAME_FULL: str = "The Multi-National Road Damage Dataset 2022"
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
@@ -48,7 +48,13 @@ DOWNLOAD_ORIGINAL_URL: Optional[
 ] = "https://bigdatacup.s3.ap-northeast-1.amazonaws.com/2022/CRDDC2022/RDD2022/RDD2022.zip"
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
-CLASS2COLOR: Optional[Dict[str, List[str]]] = None
+CLASS2COLOR: Optional[Dict[str, List[str]]] = {
+    "longitudinal crack": [230, 25, 75],
+    "transverse crack": [60, 180, 75],
+    "alligator crack": [255, 225, 25],
+    "pothole": [0, 130, 200],
+    "other corruption": [245, 130, 48],
+}
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
 # If you have more than the one paper, put the most relatable link as the first element of the list

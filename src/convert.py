@@ -125,8 +125,8 @@ def convert_and_upload_supervisely_project(
     alligator = sly.ObjClass("alligator crack", sly.Rectangle)
     pothole = sly.ObjClass("pothole", sly.Rectangle)
     other = sly.ObjClass("other corruption", sly.Rectangle)
-    block = sly.ObjClass("block crack", sly.Rectangle)
-    repair = sly.ObjClass("repair", sly.Rectangle)
+    # block = sly.ObjClass("block crack", sly.Rectangle)
+    # repair = sly.ObjClass("repair", sly.Rectangle)
 
     index_to_class = {
         "D00": longitudinal,
@@ -177,7 +177,7 @@ def convert_and_upload_supervisely_project(
 
     project = api.project.create(workspace_id, project_name, change_name_if_conflict=True)
     meta = sly.ProjectMeta(
-        obj_classes=[longitudinal, transverse, alligator, pothole, other, block, repair],
+        obj_classes=[longitudinal, transverse, alligator, pothole, other],
         tag_metas=[
             china_meta,
             drone_meta,
