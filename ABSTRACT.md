@@ -56,6 +56,6 @@ RDD2022 includes annotation for road damage present in the image. The software [
 
 <img src="https://github.com/dataset-ninja/road-damage-detector/assets/120389559/ba173aaf-2569-45b5-92e5-f1cb482fe75a" alt="image" width="800">
 
-<span style="font-size: smaller; font-style: italic;">Annotation Pipeline (a) input image, (b) image with bounding boxes, \(\c) final annotated image containing bounding boxes and class label (D00 in this case)</span>
+<span style="font-size: smaller; font-style: italic;">Annotation Pipeline (a) input image, (b) image with bounding boxes, \(c\) final annotated image containing bounding boxes and class label (D00 in this case)</span>
 
 
