@@ -79,7 +79,7 @@ AUTHORS: Optional[List[str]] = [
 ]
 AUTHORS_CONTACTS: Optional[List[str]] = ["deeksha@ct.iitr.ac.in"]
 
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = ["JP-ID joint research group"]
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = ["JP-IN joint research group"]
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
