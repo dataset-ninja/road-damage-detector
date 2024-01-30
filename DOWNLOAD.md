@@ -1,6 +1,6 @@
 Dataset **RDD2022** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](Set 'HIDE_DATASET=False' to generate download link)
+ [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/w/8/cX/dwVkyG9o8tNg9ZdMIe47nviDTwYfhqAjSQELkXQrGgHnIEJXd11p6TKMYaEkBgeaKwe0LSabJmwey1tQsroPzoAucXtbkfDBv5Dqqq3ME6uTm7bmGU7BNeT9zeiE.tar)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
