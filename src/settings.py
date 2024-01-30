@@ -13,16 +13,19 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = "Road Damage Detection 2022"
-PROJECT_NAME_FULL: str = "The Multi-National Road Damage Dataset 2022"
+PROJECT_NAME: str = "RDD2022"
+PROJECT_NAME_FULL: str = "RDD2022: The Multi-National Road Damage Dataset 2022"
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
 ##################################
 LICENSE: License = License.CC_BY_SA_4_0(source_url="https://crddc2022.sekilab.global/rules/")
-APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Automotive()]
-CATEGORY: Category = Category.SelfDriving()
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [
+    Industry.Automotive(),
+    Industry.Utilities(),
+]
+CATEGORY: Category = Category.SelfDriving(extra=[Category.EnergyAndUtilities(), Category.Drones()])
 
 CV_TASKS: List[CVTask] = [CVTask.ObjectDetection()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.ObjectDetection()]
@@ -84,8 +87,16 @@ ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
-    "countries": ["China" "Czech", "India", "Japan", "Norway", "United States"],
-    "__POSTTEXT__": "Additionally, every image from ***China*** marked with the ***drone*** or ***motorbike*** tag. Images labels have ***detail*** tag. Explore it in supervisely labeling tool",
+    "countries": [
+        "China_MotorBike",
+        "China_Drone",
+        "Czech",
+        "India",
+        "Japan",
+        "Norway",
+        "United States",
+    ],
+    "__POSTTEXT__": "Additionally, images labels have ***detail*** tag. Explore it in supervisely labeling tool",
 }
 TAGS: Optional[List[str]] = None
 

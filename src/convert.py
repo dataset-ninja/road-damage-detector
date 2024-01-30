@@ -140,9 +140,8 @@ def convert_and_upload_supervisely_project(
         "D44": other,
     }
 
-    china_meta = sly.TagMeta("China", sly.TagValueType.NONE)
-    drone_meta = sly.TagMeta("drone", sly.TagValueType.NONE)
-    motorbike_meta = sly.TagMeta("motorbike", sly.TagValueType.NONE)
+    drone_meta = sly.TagMeta("China_Drone", sly.TagValueType.NONE)
+    motorbike_meta = sly.TagMeta("China_Motorbike", sly.TagValueType.NONE)
     czech_meta = sly.TagMeta("Czech", sly.TagValueType.NONE)
     india_meta = sly.TagMeta("India", sly.TagValueType.NONE)
     japan_meta = sly.TagMeta("Japan", sly.TagValueType.NONE)
@@ -151,18 +150,14 @@ def convert_and_upload_supervisely_project(
     detail_meta = sly.TagMeta("detail", sly.TagValueType.ANY_STRING)
 
     folder_to_meta = {
-        "China_Drone": china_meta,
-        "China_MotorBike": china_meta,
+        "China_Drone": drone_meta,
+        "China_MotorBike": motorbike_meta,
         "Czech": czech_meta,
         "India": india_meta,
         "Japan": japan_meta,
         "Norway": norway_meta,
         "United_States": us_meta,
-        "Drone": drone_meta,
-        "MotorBike": motorbike_meta,
     }
-
-    china_meta = sly.TagMeta("China", sly.TagValueType.NONE)
 
     index_to_value = {
         "D00": "wheel mark part",
@@ -179,7 +174,6 @@ def convert_and_upload_supervisely_project(
     meta = sly.ProjectMeta(
         obj_classes=[longitudinal, transverse, alligator, pothole, other],
         tag_metas=[
-            china_meta,
             drone_meta,
             motorbike_meta,
             czech_meta,
